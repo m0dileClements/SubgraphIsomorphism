@@ -1,8 +1,20 @@
 class Graph {
-     public void biggerGraph(){
+     public int biggestDegree(int[][] graph){
+        int length = graph.length;
+        int highestDegree = 0;
+        for (int i = 0; i < length; i++){
+            int degreeCount = 0;
+            for (int j = 0; j < length; j++){
+                if (graph[i][j] == 1) {
+                    degreeCount+= 1;
+                }
+            }
+            if (degreeCount > highestDegree){
+                highestDegree = degreeCount;
+            }
+        }
 
-     }
-     public void biggestDegree( ){
+        return highestDegree;
 
      }
      public void printGraph(int[][] graph) {
