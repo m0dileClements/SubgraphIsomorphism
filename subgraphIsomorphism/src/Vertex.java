@@ -1,9 +1,9 @@
 public class Vertex {
-    int index = 0;
-    Integer[] neighbors = {};
-    int degree = 0;
+    int index;
+    int[] neighbors;
+    int degree;
 
-    public Vertex(int index, int degree, int[] neighbors){
+    public Vertex(int index){
         this.index = index;
         this.degree = degree;
         this.neighbors = neighbors;
