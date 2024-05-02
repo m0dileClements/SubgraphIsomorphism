@@ -23,8 +23,8 @@ public class Main {
         public static void main(String[] args){
 		Graph graphObj = new Graph();
 		//generates a random adjacency matrix given an input int for the number of vertices.
-        int length1 = Integer.parseInt(args[0]);
-		int length2 = Integer.parseInt(args[1]);
+        int length1 = Integer.valueOf(args[0]);
+		int length2 = Integer.valueOf(args[1]);
 
 		if (length1 < length2){
 			System.out.println("This is not a subgraph, as Graph G is smaller than Graph F.");

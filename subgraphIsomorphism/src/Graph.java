@@ -1,4 +1,5 @@
-class Graph {
+
+public class Graph {
      public int biggestDegree(int[][] graph){
         int length = graph.length;
         int highestDegree = 0;
@@ -17,6 +18,10 @@ class Graph {
         return highestDegree;
 
      }
+    //  public Boolean isBiggerThan(Graph that){
+    //     return this.size >= that.size
+    //  }
+
      public void printGraph(int[][] graph) {
         int length = graph.length;
         for (int m = 0; m < length; m ++) {
