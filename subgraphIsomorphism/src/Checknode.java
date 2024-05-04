@@ -1,18 +1,16 @@
 import java.util.ArrayList;
 
 public class Checknode {
-    Vertex vG;
+	Vertex vG;
 	Vertex vH;
 	ArrayList<Integer> trasub;
 	ArrayList<Integer> trabig;
-	public Checknode(Vertex vG, Vertex vH,ArrayList<Integer> trasub,ArrayList<Integer> trabig) 
-	{
+	
+	public Checknode(Vertex vG, Vertex vH,ArrayList<Integer> trasub,ArrayList<Integer> trabig) {
 		this.vG = vG;
 		this.vH = vH;
-        trasub.add(vH.index);
-        trabig.add(vH.index);
+		this.trasub = trasub;
 		this.trabig = trabig;
-        this.trasub = trasub;
 	}
 
 }
